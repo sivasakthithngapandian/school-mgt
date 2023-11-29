@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'reset-psw',
     loadChildren: () => import('./pages/reset-psw/reset-psw.module').then( m => m.ResetPswPageModule)
   },
+  {
+    path: 'verify',
+    loadChildren: () => import('./verify/verify.module').then( m => m.VerifyPageModule)
+  },
 ];
 
 @NgModule({
